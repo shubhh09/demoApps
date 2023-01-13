@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOd-7i-4zi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Vc-->
+        <scene sceneID="Crg-Kh-kdg">
+            <objects>
+                <viewController storyboardIdentifier="dateVc" id="UOd-7i-4zi" customClass="dateVc" customModule="date" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6r-h8-wtv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="EYg-RI-VXv">
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3Gx-lg-9MW"/>
+                                    <constraint firstAttribute="height" constant="300" id="cJD-2D-2Cy"/>
+                                </constraints>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fpd-5Y-phq">
+                                <rect key="frame" x="80" y="94" width="254" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="WM5-3Y-w3r"/>
+                                    <constraint firstAttribute="width" constant="254" id="Zm1-GT-gnm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MD9-xu-Ph2"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EYg-RI-VXv" firstAttribute="centerX" secondItem="MD9-xu-Ph2" secondAttribute="centerX" id="BOA-G1-p9v"/>
+                            <constraint firstItem="Fpd-5Y-phq" firstAttribute="top" secondItem="MD9-xu-Ph2" secondAttribute="top" constant="50" id="ZKT-Dg-TDd"/>
+                            <constraint firstItem="Fpd-5Y-phq" firstAttribute="centerX" secondItem="EYg-RI-VXv" secondAttribute="centerX" id="iDh-BP-jMe"/>
+                            <constraint firstItem="EYg-RI-VXv" firstAttribute="centerY" secondItem="MD9-xu-Ph2" secondAttribute="centerY" id="p9B-uh-V6P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePickr" destination="EYg-RI-VXv" id="5y0-gK-ucb"/>
+                        <outlet property="mainTF" destination="Fpd-5Y-phq" id="BJH-i9-bZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uz1-gb-rhP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="-36.160714285714285"/>
+        </scene>
+    </scenes>
+</document>
